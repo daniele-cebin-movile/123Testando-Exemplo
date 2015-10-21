@@ -41,5 +41,12 @@ class ContadorTests: XCTestCase {
         
         c.zerar()
         XCTAssertEqual(c.total, 0, "após zerar, devemos estar com total 0")
+        
+        c.incrementar()
+        c.incrementar()
+        c.incrementar()
+        
+        c.zerar()
+        XCTAssertEqual(c.total, 0, "após zerar, devemos estar com total 0")
     }
 }
