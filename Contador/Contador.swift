@@ -12,6 +12,6 @@ class Contador {
     var total = 0
     
     func incrementar() {
-        total = 1
+        total += 1
     }
 }
