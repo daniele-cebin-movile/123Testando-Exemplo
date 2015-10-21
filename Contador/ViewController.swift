@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func zerar(sender: UIButton) {
+        c.zerar()
+        atualizaDisplay()
     }
     
     private func atualizaDisplay() {
