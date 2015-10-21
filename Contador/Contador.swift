@@ -9,5 +9,5 @@
 import Foundation
 
 class Contador {
-    
+    var total = 0
 }
