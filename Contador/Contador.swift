@@ -14,4 +14,8 @@ class Contador {
     func incrementar() {
         total += 1
     }
+    
+    func zerar() {
+        total = 0
+    }
 }
