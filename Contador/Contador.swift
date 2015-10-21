@@ -9,7 +9,7 @@
 import Foundation
 
 class Contador {
-    var total = 0
+    private(set) var total = 0
     
     func incrementar() {
         total += 1
