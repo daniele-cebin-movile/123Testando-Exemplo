@@ -15,9 +15,11 @@ class ContadorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        c = Contador()
     }
     
     override func tearDown() {
+        c = nil
         super.tearDown()
     }
 }
