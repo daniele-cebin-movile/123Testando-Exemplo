@@ -10,10 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
+    let c = Contador()
     
     @IBAction func incrementar(sender: UIButton) {
+        c.incrementar()
+        atualizaDisplay()
     }
     
     @IBAction func zerar(sender: UIButton) {
+    }
+    
+    private func atualizaDisplay() {
+        totalLabel.text = String(c.total)
     }
 }
