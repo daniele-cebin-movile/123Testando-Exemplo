@@ -28,5 +28,10 @@ class ContadorTests: XCTestCase {
         
         c.incrementar()
         XCTAssertEqual(c.total, 1, "após incremento, devemos estar em 1")
+        
+        c.incrementar()
+        c.incrementar()
+        c.incrementar()
+        XCTAssertEqual(c.total, 4, "após 3 incrementos, devemos estar em 4")
     }
 }
