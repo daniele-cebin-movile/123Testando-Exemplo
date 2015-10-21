@@ -22,4 +22,8 @@ class ContadorTests: XCTestCase {
         c = nil
         super.tearDown()
     }
+    
+    func testIncremento() {
+        XCTAssertEqual(c.total, 0, "contador deve inicializar com total 0")
+    }
 }
