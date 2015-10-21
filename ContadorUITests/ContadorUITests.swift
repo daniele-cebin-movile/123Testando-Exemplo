@@ -37,4 +37,16 @@ class ContadorUITests: XCTestCase {
         app.buttons["Incrementar"].tap()
         XCTAssert(app.staticTexts["1"].exists)
     }
+    
+    func testZerar() {
+        let app = XCUIApplication()
+        XCTAssert(app.staticTexts["0"].exists)
+        
+        app.buttons["Incrementar"].tap()
+        app.buttons["Incrementar"].tap()
+        app.buttons["Incrementar"].tap()
+        
+        app.buttons["Zerar"].tap()
+        XCTAssert(app.staticTexts["0"].exists)
+    }
 }
